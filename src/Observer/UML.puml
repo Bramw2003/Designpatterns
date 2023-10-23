@@ -1,0 +1,27 @@
+@startuml Observer
+class Subject {
+    + attach(observer: Observer)
+    + detach(observer: Observer)
+    + notify()
+}
+
+class Observer {
+    + update(subject: Subject)
+}
+
+class ConcreteSubject {
+    - observers: array
+    + attach(observer: Observer)
+    + detach(observer: Observer)
+    + notify()
+}
+
+class ConcreteObserver {
+    + update(subject: Subject)
+}
+
+Subject <|.. ConcreteSubject
+Subject <|.. ConcreteObserver
+
+ConcreteSubject -- ConcreteObserver: "1" *- "many"
+@enduml

@@ -1,0 +1,38 @@
+@startuml Iterator
+class Iterator {
+    + rewind(): void
+    + current(): mixed
+    + key(): mixed
+    + next(): void
+    + valid(): bool
+}
+
+class MyIterator {
+    - items: array
+    - position: int
+    + __construct(items: array)
+}
+
+class ConcreteIterator {
+    - items: array
+    - position: int
+    + __construct(items: array)
+}
+
+class Aggregate {
+    + createIterator(): Iterator
+}
+
+class ConcreteAggregate {
+    + createIterator(): Iterator
+}
+
+Iterator <|.. MyIterator
+Iterator <|.. ConcreteIterator
+
+MyIterator -- ConcreteIterator: "1" *- "1"
+
+Aggregate <|.. ConcreteAggregate
+
+ConcreteAggregate -- ConcreteIterator: "1" *- "many"
+@enduml

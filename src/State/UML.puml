@@ -1,0 +1,35 @@
+@startuml
+class State {
+    + handle()
+}
+
+class Context {
+    - state: State
+    + setState(state: State)
+    + requestPrint()
+}
+
+class IdleState {
+    + handle()
+}
+
+class PrintingState {
+    + handle()
+}
+
+class ErrorState {
+    + handle()
+}
+
+class OutOfPaperState {
+    + handle()
+}
+
+Context -> State
+State <|.. IdleState
+State <|.. PrintingState
+State <|.. ErrorState
+State <|.. OutOfPaperState
+
+Context o-- State: "1" *- "1"
+@enduml
