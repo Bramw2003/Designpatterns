@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="226px" preserveAspectRatio="none" style="width:430px;height:226px;background:#FFFFFF;" version="1.1" viewBox="0 0 430 226" width="430px" zoomAndPan="magnify"><defs/><g><!--MD5=[80667826c6a3f873773656478a92c2a3]
+cluster DesignPatterns.Behavioral.Iterator--><g id="cluster_DesignPatterns.Behavioral.Iterator"><path d="M8.5,6 L281.5,6 A3.75,3.75 0 0 1 284,8.5 L291,28.2969 L420.5,28.2969 A2.5,2.5 0 0 1 423,30.7969 L423,216.5 A2.5,2.5 0 0 1 420.5,219 L8.5,219 A2.5,2.5 0 0 1 6,216.5 L6,8.5 A2.5,2.5 0 0 1 8.5,6 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="291" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="272" x="10" y="20.9951">DesignPatterns.Behavioral.Iterator</text></g><!--MD5=[87708afed8113dd250a30d0a66531b74]
+class DesignPatterns.Behavioral.Iterator.Iterator--><g id="elem_DesignPatterns.Behavioral.Iterator.Iterator"><rect codeLine="3" fill="#F1F1F1" height="129.4844" id="DesignPatterns.Behavioral.Iterator.Iterator" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136" x="271" y="57.5"/><ellipse cx="310.75" cy="73.5" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M306.6719,69.2656 L306.6719,67.1094 L314.0625,67.1094 L314.0625,69.2656 L311.5938,69.2656 L311.5938,77.3438 L314.0625,77.3438 L314.0625,79.5 L306.6719,79.5 L306.6719,77.3438 L309.1406,77.3438 L309.1406,69.2656 L306.6719,69.2656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="49" x="330.25" y="78.3467">Iterator</text><line style="stroke:#181818;stroke-width:0.5;" x1="272" x2="406" y1="89.5" y2="89.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="272" x2="406" y1="97.5" y2="97.5"/><ellipse cx="282" cy="111.1484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="291" y="114.4951">rewind(): void</text><ellipse cx="282" cy="127.4453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="291" y="130.792">current(): mixed</text><ellipse cx="282" cy="143.7422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="291" y="147.0889">key(): mixed</text><ellipse cx="282" cy="160.0391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="291" y="163.3857">next(): void</text><ellipse cx="282" cy="176.3359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="291" y="179.6826">valid(): bool</text></g><!--MD5=[48773ba367fab089a18346d091e4081d]
+class DesignPatterns.Behavioral.Iterator.MyIterator--><g id="elem_DesignPatterns.Behavioral.Iterator.MyIterator"><rect codeLine="11" fill="#F1F1F1" height="162.0781" id="DesignPatterns.Behavioral.Iterator.MyIterator" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136" x="22" y="41"/><ellipse cx="53.2" cy="57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M56.1688,62.6406 Q55.5906,62.9375 54.95,63.0781 Q54.3094,63.2344 53.6063,63.2344 Q51.1063,63.2344 49.7781,61.5938 Q48.4656,59.9375 48.4656,56.8125 Q48.4656,53.6875 49.7781,52.0313 Q51.1063,50.375 53.6063,50.375 Q54.3094,50.375 54.95,50.5313 Q55.6063,50.6875 56.1688,50.9844 L56.1688,53.7031 Q55.5438,53.125 54.95,52.8594 Q54.3563,52.5781 53.7313,52.5781 Q52.3875,52.5781 51.7,53.6563 Q51.0125,54.7188 51.0125,56.8125 Q51.0125,58.9063 51.7,59.9844 Q52.3875,61.0469 53.7313,61.0469 Q54.3563,61.0469 54.95,60.7813 Q55.5438,60.5 56.1688,59.9219 L56.1688,62.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="70.8" y="61.8467">MyIterator</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="157" y1="73" y2="73"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="30" y="83.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="42" y="89.9951">items: array</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="30" y="99.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="42" y="106.292">position: int</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="157" y1="113.5938" y2="113.5938"/><ellipse cx="33" cy="127.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="42" y="130.5889">rewind(): void</text><ellipse cx="33" cy="143.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="42" y="146.8857">current(): mixed</text><ellipse cx="33" cy="159.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="42" y="163.1826">key(): mixed</text><ellipse cx="33" cy="176.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="42" y="179.4795">next(): void</text><ellipse cx="33" cy="192.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="42" y="195.7764">valid(): bool</text></g><!--MD5=[49a81462125bf5be972fea449569ec15]
+link DesignPatterns.Behavioral.Iterator.MyIterator to DesignPatterns.Behavioral.Iterator.Iterator--><g id="link_DesignPatterns.Behavioral.Iterator.MyIterator_DesignPatterns.Behavioral.Iterator.Iterator"><path codeLine="23" d="M158.04,122 C191.25,122 231.27,122 265.22,122 " fill="none" id="DesignPatterns.Behavioral.Iterator.MyIterator-to-DesignPatterns.Behavioral.Iterator.Iterator" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="270.61,122,261.61,118,265.61,122,261.61,126,270.61,122" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="176.5" y="115.0669">implements</text></g><!--MD5=[1fb5db33fa592c859d591ffdfa975a5c]
+@startuml
+namespace DesignPatterns.Behavioral.Iterator {
+
+    interface Iterator {
+        +rewind(): void
+        +current(): mixed
+        +key(): mixed
+        +next(): void
+        +valid(): bool
+    }
+
+    class MyIterator {
+        -items: array
+        -position: int
+        +rewind(): void
+        +current(): mixed
+        +key(): mixed
+        +next(): void
+        +valid(): bool
+    }
+
+}
+
+DesignPatterns.Behavioral.Iterator.MyIterator -right-> DesignPatterns.Behavioral.Iterator.Iterator: implements
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

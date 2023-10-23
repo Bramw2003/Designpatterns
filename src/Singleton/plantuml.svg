@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="110px" preserveAspectRatio="none" style="width:351px;height:110px;background:#FFFFFF;" version="1.1" viewBox="0 0 351 110" width="351px" zoomAndPan="magnify"><defs/><g><!--MD5=[2f4e497837a991172d40b04b7a7d0ca2]
+class Singleton--><g id="elem_Singleton"><rect codeLine="1" fill="#F1F1F1" height="96.8906" id="Singleton" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="233" x="7" y="7"/><ellipse cx="86.75" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M89.7188,28.6406 Q89.1406,28.9375 88.5,29.0781 Q87.8594,29.2344 87.1563,29.2344 Q84.6563,29.2344 83.3281,27.5938 Q82.0156,25.9375 82.0156,22.8125 Q82.0156,19.6875 83.3281,18.0313 Q84.6563,16.375 87.1563,16.375 Q87.8594,16.375 88.5,16.5313 Q89.1563,16.6875 89.7188,16.9844 L89.7188,19.7031 Q89.0938,19.125 88.5,18.8594 Q87.9063,18.5781 87.2813,18.5781 Q85.9375,18.5781 85.25,19.6563 Q84.5625,20.7188 84.5625,22.8125 Q84.5625,24.9063 85.25,25.9844 Q85.9375,27.0469 87.2813,27.0469 Q87.9063,27.0469 88.5,26.7813 Q89.0938,26.5 89.7188,25.9219 L89.7188,28.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="107.25" y="27.8467">Singleton</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="239" y1="39" y2="39"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="49.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="27" y="55.9951">static instance: Singleton</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="239" y1="63.2969" y2="63.2969"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="73.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="27" y="80.292">Singleton(): void</text><ellipse cx="18" cy="93.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="27" y="96.5889">static getInstance(): Singleton</text></g><!--MD5=[606bfff5e731bbe500a8872b8636183b]
+link Singleton to Singleton--><g id="link_Singleton_Singleton"><path codeLine="7" d="M240.06,38.59 C260.65,40.82 275,46.45 275,55.5 C275,63.77 263.01,69.19 245.22,71.76 " fill="none" id="Singleton-to-Singleton" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="240.06,72.41,249.4917,75.2461,245.0203,71.781,248.4853,67.3096,240.06,72.41" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="281" y="60.0669">«create»</text></g><!--MD5=[353efdedee9de8f26e875e460388c9ea]
+@startuml
+class Singleton {
+    -static instance: Singleton
+    -Singleton(): void
+    +static getInstance(): Singleton
+}
+
+Singleton ..> Singleton: << create >>
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
