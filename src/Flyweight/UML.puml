@@ -1,0 +1,30 @@
+@startuml
+
+interface Flyweight {
+    +operation()
+}
+
+class ConcreteFlyweight {
+    -intrinsicState: string
+    +__construct(intrinsicState: string)
+    +operation()
+}
+
+class UnsharedConcreteFlyweight {
+    -allState: string
+    +__construct(allState: string)
+    +operation()
+}
+
+class FlyweightFactory {
+    -flyweights: array
+    +getFlyweight(key: string): Flyweight
+}
+
+ConcreteFlyweight --|> Flyweight
+
+FlyweightFactory o-- "1" ConcreteFlyweight : Creates
+
+FlyweightFactory o-- "1" UnsharedConcreteFlyweight : Manages
+
+@enduml

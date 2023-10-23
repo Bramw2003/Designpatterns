@@ -1,0 +1,49 @@
+@startuml
+class AbstractFactory {
+    + createProductA(): ProductA
+    + createProductB(): ProductB
+}
+
+interface ProductA {
+    + __construct()
+}
+
+interface ProductB {
+    + __construct()
+}
+
+class ConcreteFactory1 {
+    + createProductA(): ProductA
+    + createProductB(): ProductB
+}
+
+class ConcreteFactory2 {
+    + createProductA(): ProductA
+    + createProductB(): ProductB
+}
+
+class ProductA1 {
+    + __construct()
+}
+
+class ProductA2 {
+    + __construct()
+}
+
+class ProductB1 {
+    + __construct()
+}
+
+class ProductB2 {
+    + __construct()
+}
+
+AbstractFactory o-- ConcreteFactory1: "1" *- "1"
+AbstractFactory o-- ConcreteFactory2: "1" *- "1"
+
+ConcreteFactory1 -> ProductA1: "1" *- "1"
+ConcreteFactory1 -> ProductB1: "1" *- "1"
+
+ConcreteFactory2 -> ProductA2: "1" *- "1"
+ConcreteFactory2 -> ProductB2: "1" *- "1"
+@enduml
